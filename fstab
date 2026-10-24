@@ -1,0 +1,24 @@
+
+#
+# /etc/fstab
+# Created by anaconda on Fri Aug  7 14:10:00 2026
+#
+# Accessible filesystems, by reference, are maintained under '/dev/disk/'.
+# See man pages fstab(5), findfs(8), mount(8) and/or blkid(8) for more info.
+#
+# After editing this file, run 'systemctl daemon-reload' to update systemd
+# units generated from this file.
+#
+UUID=d4b7f563-eda5-4ea8-b008-85093303ef1e /                       xfs     defaults        0 0
+UUID=6e5603a5-ecbf-41f1-8a0e-ccb3d5ba7392 /boot                   xfs     defaults        0 0
+UUID=af750ca3-6d82-4d40-924f-f94a3626e6ef none                    swap    defaults        0 0
+UUID=b008fa8f-b95b-4bef-9b06-bdd1696c73ba /media/samba            xfs     defaults        0 0 
+# For some reason, this was different from the instruction figures despite being the only example given
+# But the directions do specifically state to make the file type for the nvme0n2 drive xfs
+# Could this be intentional, to give us more practice debugging and using initramfs? 
+UUID=91a46738-52c2-40f4-a027-b22887e63003 /media/nfs1             xfs     defaults        0 0
+UUID=dbe7a3d0-1a34-44d1-ad27-40ddb62a1893 /media/nfs2             xfs     defaults        0 0
+UUID=9ae72f31-e6cc-4880-910b-312e1cd43dc0 /media/samba1           xfs     defaults        0 0
+UUID=4f6e311a-af48-44c4-a549-54b2b70827e3 /media/samba2           xfs     defaults        0 0
+UUID=0717cb40-45be-4ce8-9ae1-24890b54c8c9 /media/samba3           xfs     defaults        0 0
+UUID=0547432e-2fc6-4724-9a0e-10e4c3249e11 /media/Fungal           xfs     defaults        0 0
